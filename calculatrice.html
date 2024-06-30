@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculatrice.css" />
+    <title>Calculatrice</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Calculatrice</legend>
+      <input type="text" id="number1" />
+      <span id="error-number1" class="error"></span>
+
+      <input type="text" id="number2" />
+      <span id="error-number2" class="error"></span>
+
+      <select name="operation" id="op" class="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+
+      <button id="submit" class="submit">Submit</button>
+      <table>
+        <thead>
+          <tr>
+            <td>Number1</td>
+            <td>Opérateur</td>
+            <td>Number2</td>
+            <td>Résultat</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="number1-table"></td>
+            <td id="op-table"></td>
+            <td id="number2-table"></td>
+            <td id="result-table"></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </body>
+  <script src="calculatrice.js"></script>
+</html>

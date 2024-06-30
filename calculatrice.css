@@ -1,0 +1,35 @@
+fieldset {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+legend {
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, button {
+    margin: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
